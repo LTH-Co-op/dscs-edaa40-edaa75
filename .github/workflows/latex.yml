@@ -9,6 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - uses: satackey/action-docker-layer-caching@v0.0.11
+      continue-on-error: true
+
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
       with:
