@@ -1,1 +1,18 @@
+# OSX
 .DS_STORE
+
+# Latex
+*.aux
+*.bbl
+*.bak
+*.blg
+*.log
+*.out
+*.bcf
+*.xml
+*.stderr
+*.stdout
+*-blx.bib
+*.gz
+*.fls
+*.fdb_latexmk
