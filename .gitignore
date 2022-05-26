@@ -3,12 +3,15 @@
 
 # Latex
 *.aux
-*.bbl
 *.bak
+*.bbl
+*.bcf
 *.blg
 *.log
+*.nav
 *.out
-*.bcf
+*.snm
+*.toc
 *.xml
 *.stderr
 *.stdout
