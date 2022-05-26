@@ -1,4 +1,6 @@
-\documentclass[a4paper]{article}
+\documentclass[a5paper]{article}
+
+\usepackage[top=1cm,bottom=1cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -6,24 +8,21 @@
 \usepackage{csquotes}
 \usepackage{hyperref}
 \usepackage{url}
-\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
 \usepackage[flushleft]{threeparttable}
 \usepackage{booktabs}
 \usepackage{amsmath}
+\usepackage{caption}
 
-\title{DSCS - EDAA40/EDAA75}
+\pagenumbering{gobble}
 
 \begin{document}
-
-\maketitle
-
-\section{DNF}
 
 \begin{figure}[ht]
 	\centering
 	\resizebox{\textwidth}{!}{\includegraphics{2018_1/solution-5.1.jpeg}}
-	\caption{För att lösa DNF uppgifter kan man skapa ett truth table med alla literaler som förekommer i uttrycket.
-  Sedan bygger man stegvis upp hela uttrycket med fler kolumner.
+	\caption*{För att lösa DNF uppgifter kan man skapa ett truth table med alla literaler som förekommer i uttrycket.
+		Sedan bygger man stegvis upp hela uttrycket med fler kolumner.
 	}\label{fig:2018-5-1}
 \end{figure}
 
