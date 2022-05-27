@@ -100,7 +100,7 @@ The reason why we don't allow antisymmetric is the same reason it is not reflexi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section*{Other important defintions}
+\section*{Other important definitions}
 \subsection*{Node height/depth}
 The link-height (alias level) of a node in a tree is defined recursively: that of the root is 0,
 and that of each of the children of a node is one greater than that of the node.
@@ -109,5 +109,18 @@ except that the node-height of the root is set at 1.
 Thus, for every node x, \(node-height(x) = link-height(x) + 1\).
 As trees are usually drawn upside-down, the term `depth' is often used instead of `height'.
 
-\end{document}
+\subsection*{Edge cases for always/sometimes/never problems}
+If you have a graph \((V, E)\), then you should check the edge cases where:
+\begin{enumerate}
+	\item \(V=\emptyset \) or \(E=\emptyset \).
+	\item \(V\) only contains 1 node or 2 nodes.
+	\item \(E\) contains a connection in one direction but not back. And when it contains a connection in both directions.
+	\item All nodes are connected to all nodes.
+\end{enumerate}
 
+\subsection*{Quantifiers}
+
+\(\forall x\in\emptyset(\ldots) = true\). \\
+\(\exists x\in\emptyset(\ldots) = false\).
+
+\end{document}
