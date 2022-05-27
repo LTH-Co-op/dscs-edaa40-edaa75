@@ -1,6 +1,12 @@
-\documentclass[a5paper]{article}
+\documentclass[twocolumn,a4paper]{article}
 
-\usepackage[top=1.0cm,bottom=1.0cm,left=1cm,right=1cm,textheight=597pt]{geometry}
+\usepackage[landscape,left=2cm,right=2cm,top=1cm,bottom=1cm]{geometry}
+
+\fboxrule=0.75pt
+\setlength{\fboxsep}{0pt}
+\setlength{\columnsep}{25pt}
+
+\pagenumbering{gobble}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -14,11 +20,6 @@
 \usepackage{amsmath}
 \usepackage{caption}
 
-\fboxrule=0.75pt
-\setlength{\fboxsep}{0pt}
-
-\pagenumbering{gobble}
-
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,7 +29,7 @@ Sedan bygger man stegvis upp hela uttrycket med fler kolumner.
 Se s.12 i Definitions för \emph{basic logic connectives}.
 \begin{figure}[ht]
 	\centering
-	\fbox{\resizebox{0.9\textwidth}{!}{\includegraphics{2018_1/solution-5.1.jpeg}}}
+	\fbox{\resizebox{0.85\columnwidth}{!}{\includegraphics{2018_1/solution-5.1.jpeg}}}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -41,7 +42,7 @@ TODO:\@ Understand answer and \([[]]\) syntax
 \begin{figure}[ht]
 	\centering
 	\vspace{-10pt}
-	\fbox{\resizebox{0.85\textwidth}{!}{\includegraphics{2017_1/solution-1.png}}}
+	\fbox{\resizebox{0.85\columnwidth}{!}{\includegraphics{2017_1/solution-1.png}}}
 	\vspace{-10pt}
 \end{figure}
 
@@ -49,7 +50,7 @@ Below is a explanation of how to think with intervals in more detail.
 \begin{figure}[ht]
 	\centering
 	\vspace{-10pt}
-	\fbox{\resizebox{0.85\textwidth}{!}{\includegraphics{2017_1/solution-1-explained.png}}}
+	\fbox{\resizebox{0.85\columnwidth}{!}{\includegraphics{2017_1/solution-1-explained.png}}}
 	\vspace{-30pt}
 \end{figure}
 
@@ -60,7 +61,7 @@ This is an easier example for injective and surjective functions.
 The reason why this question is easier is because we can define the domain and codomain seperatly.
 \begin{figure}[ht]
 	\centering
-	\fbox{\resizebox{0.95\textwidth}{!}{\includegraphics{2017_1/solution-2.png}}}
+	\fbox{\resizebox{0.95\columnwidth}{!}{\includegraphics{2017_1/solution-2.png}}}
 \end{figure}
 
 With all of these weird example where something should be surjective and not injective and the codomain = domain we need to utilize infinte.
@@ -68,11 +69,11 @@ What is happening here is that any item in the codomain could be reached from th
 Meaning it is surjective but we also point to the same element twice.
 \begin{figure}[ht]
 	\centering
-	\fbox{\resizebox{0.95\textwidth}{!}{\includegraphics{2017_1/solution-3.png}}}
+	\fbox{\resizebox{0.95\columnwidth}{!}{\includegraphics{2017_1/solution-3.png}}}
 \end{figure}
 \begin{figure}[ht]
 	\centering
-	\fbox{\resizebox{0.95\textwidth}{!}{\includegraphics{2017_1/solution-4.png}}}
+	\fbox{\resizebox{0.95\columnwidth}{!}{\includegraphics{2017_1/solution-4.png}}}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,7 +85,7 @@ We don't put any demands on our directed graph meaning it could be any kind of r
 every node could be symmetric but then we would need to edges per node.
 \begin{figure}[ht]
 	\centering
-	\fbox{\resizebox{0.95\textwidth}{!}{\includegraphics{2017_1/solution-5.png}}}
+	\fbox{\resizebox{0.95\columnwidth}{!}{\includegraphics{2017_1/solution-5.png}}}
 \end{figure}
 
 This is an example of properties for a rooted tree.
@@ -94,7 +95,7 @@ you can go directly to be or go to a and then go to b and then a.
 The reason why we don't allow antisymmetric is the same reason it is not reflexive.
 \begin{figure}[ht]
 	\centering
-	\fbox{\resizebox{0.95\textwidth}{!}{\includegraphics{2017_1/solution-6.png}}}
+	\fbox{\resizebox{0.95\columnwidth}{!}{\includegraphics{2017_1/solution-6.png}}}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
