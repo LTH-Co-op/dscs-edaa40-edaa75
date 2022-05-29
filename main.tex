@@ -18,6 +18,7 @@
 \usepackage[flushleft]{threeparttable}
 \usepackage{booktabs}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{caption}
 
 \begin{document}
@@ -109,6 +110,11 @@ except that the node-height of the root is set at 1.
 Thus, for every node x, \(node-height(x) = link-height(x) + 1\).
 As trees are usually drawn upside-down, the term `depth' is often used instead of `height'.
 
+\subsection{CNF}
+Conjunctive normal form is like disjunctive normal form but ‘upside-down’: the roles of disjunction and conjunction are reversed. 
+A basic disjunction is defined to be any disjunction of (one or more) literals in which no letter occurs more than once.
+A formula is said to be in conjunctive normal form (cnf) iff it is a conjunction of (one or more) basic disjunctions
+
 \subsection*{Edge cases for always/sometimes/never problems}
 If you have a graph \((V, E)\), then you should check the edge cases where:
 \begin{enumerate}
@@ -123,4 +129,14 @@ If you have a graph \((V, E)\), then you should check the edge cases where:
 \(\forall x\in\emptyset(\ldots) = true\). \\
 \(\exists x\in\emptyset(\ldots) = false\).
 
+\subsection*{Logic operators}
+\begin{enumerate}
+	\item $\alpha \barwedge \beta = \neg (\alpha \wedge \beta)$ and $\neg \alpha = (\alpha \barwedge \alpha)$
+\end{enumerate}
+
+\subsection*{Image of n-ary}
+When computing the imager, we treat the last position of a relation as its `output`. 
+\begin{equation}
+	R(a_1, \ldots, a_{n-1}) = \{a \in A : (a_1, \ldots, a_{n-1}, a) \in R \}
+\end{equation}
 \end{document}
