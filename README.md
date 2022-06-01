@@ -3,6 +3,7 @@ Planen är att vi gör lösningar till extentor på ett snyggt sätt för alla o
 
 # Områden
 - [x] DNF
-- [ ] Trees
-- [ ] Graphs
-- [ ] Relations
+- [x] Trees
+- [x] Graphs
+- [x] Relations
+- [ ] Languages
