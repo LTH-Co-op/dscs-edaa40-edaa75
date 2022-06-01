@@ -25,12 +25,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{DNF solving}
-För att lösa DNF uppgifter kan man skapa ett truth table med alla literaler som förekommer i uttrycket.
-Sedan bygger man stegvis upp hela uttrycket med fler kolumner.
-Se s.12 i Definitions för \emph{basic logic connectives}.
+You can use a truth table to solve DNF problems.
+Start by adding a column for each literal with all combinations of 1s and 0s.
+Then you add columns to your truth table for each subexpression until you've expressed the entire expression.
+The rows containing a 1 in the final column are your answer.
+See p.12 in Definitions för \emph{basic logic connectives}.
 \begin{figure}[ht]
 	\centering
-	\fbox{\resizebox{0.85\columnwidth}{!}{\includegraphics{2018_1/solution-5.1.jpeg}}}
+	\fbox{\resizebox{0.85\columnwidth}{!}{\includegraphics{2018_1/solution-5.1.png}}}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -38,7 +40,6 @@ Se s.12 i Definitions för \emph{basic logic connectives}.
 \section*{Intervals}
 
 Here is a question about understanding how intervals change when sending through functions and meet.
-TODO:\@ Understand answer and \([[]]\) syntax
 
 \begin{figure}[ht]
 	\centering
@@ -58,16 +59,17 @@ Below is a explanation of how to think with intervals in more detail.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section*{Injective and surjectiv}
-This is an easier example for injective and surjective functions.
-The reason why this question is easier is because we can define the domain and codomain seperatly.
+This is a simpler example of injective and surjective functions.
+The reason why this question is simpler is because we can define the domain and codomain separatly.
+
 \begin{figure}[ht]
 	\centering
 	\fbox{\resizebox{0.95\columnwidth}{!}{\includegraphics{2017_1/solution-2.png}}}
 \end{figure}
 
-With all of these weird example where something should be surjective and not injective and the codomain = domain we need to utilize infinte.
-What is happening here is that any item in the codomain could be reached from the domain by takin the item plus one.
-Meaning it is surjective but we also point to the same element twice.
+When something should be surjective but \textbf{not} injective and the \(codomain = domain\) we need to utilize infinity.
+Below, any element in the codomain could be reached from the domain by adding one to it.
+Meaning it is surjective but we also point to the same element twice, 0 in this case.
 \begin{figure}[ht]
 	\centering
 	\fbox{\resizebox{0.95\columnwidth}{!}{\includegraphics{2017_1/solution-3.png}}}
@@ -80,20 +82,18 @@ Meaning it is surjective but we also point to the same element twice.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section*{Properties of paths, graphs and trees}
-Here is an example of properties of an directed graph.
-The interesting thing to remember is that no property is guaranteed.
-We don't put any demands on our directed graph meaning it could be any kind of relation,
-every node could be symmetric but then we would need to edges per node.
+Properties of a \textbf{directed graph}, worth remembering is that no property is guaranteed.
+We don't put any constraints on our graph meaning it could be any kind of relation,
+for example every edge could be symmetric.
 \begin{figure}[ht]
 	\centering
 	\fbox{\resizebox{0.95\columnwidth}{!}{\includegraphics{2017_1/solution-5.png}}}
 \end{figure}
 
-This is an example of properties for a rooted tree.
-This differs a bit from the example above, here some demands are put on the directed graph.
-The reason why it is antisymmetric and asymetric is because if there exist (a,b) and (b,a) then there is a two ways to reach a,
-you can go directly to be or go to a and then go to b and then a.
-The reason why we don't allow antisymmetric is the same reason it is not reflexive.
+Below are the properties of a \textbf{rooted tree}.
+The reason it's antisymmetric and asymmetric is because if there exist (a,b) and (b,a) then there are multiple ways to reach b
+(ie. \(a\rightarrow b\), \(a\rightarrow b\rightarrow a\rightarrow b\)).
+The reason why it's antisymmetric is the same reason it is not reflexive.
 \begin{figure}[ht]
 	\centering
 	\fbox{\resizebox{0.95\columnwidth}{!}{\includegraphics{2017_1/solution-6.png}}}
@@ -103,17 +103,18 @@ The reason why we don't allow antisymmetric is the same reason it is not reflexi
 \newpage
 \section*{Other important definitions}
 \subsection*{Node height/depth}
-The link-height (alias level) of a node in a tree is defined recursively: that of the root is 0,
+The \textbf{link-height} (\emph{alias:} level) in a tree is defined recursively: that of the root is 0,
 and that of each of the children of a node is one greater than that of the node.
-The node-height of a node (alias just its height in many texts) is defined by the same recursion,
-except that the node-height of the root is set at 1.
+
+The \textbf{node-height} (\emph{alias:} height) is defined by the same recursion,
+except that the node-height of the root is set to 1.
 Thus, for every node x, \(node-height(x) = link-height(x) + 1\).
 As trees are usually drawn upside-down, the term `depth' is often used instead of `height'.
 
 \subsection*{CNF}
-Conjunctive normal form is like disjunctive normal form but ‘upside-down’: the roles of disjunction and conjunction are reversed. 
+Conjunctive normal form is like disjunctive normal form but `upside-down': the roles of disjunction and conjunction are reversed.
 A basic disjunction is defined to be any disjunction of (one or more) literals in which no letter occurs more than once.
-A formula is said to be in conjunctive normal form (cnf) iff it is a conjunction of (one or more) basic disjunctions
+A formula is said to be in conjunctive normal form (CNF) iff it is a conjunction of (one or more) basic disjunctions
 
 \subsection*{Edge cases for always/sometimes/never problems}
 If you have a graph \((V, E)\), then you should check the edge cases where:
@@ -135,7 +136,7 @@ If you have a graph \((V, E)\), then you should check the edge cases where:
 \end{enumerate}
 
 \subsection*{Image of n-ary}
-When computing the imager, we treat the last position of a relation as its `output`. 
+When computing the image, we treat the last element of a tuple as the `output'.
 \begin{equation}
 	R(a_1, \ldots, a_{n-1}) = \{a \in A : (a_1, \ldots, a_{n-1}, a) \in R \}
 \end{equation}
