@@ -6,4 +6,4 @@ Planen är att vi gör lösningar till extentor på ett snyggt sätt för alla o
 - [x] Trees
 - [x] Graphs
 - [x] Relations
-- [ ] Languages
+- [x] Languages
