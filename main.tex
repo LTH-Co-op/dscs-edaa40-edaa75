@@ -21,6 +21,14 @@
 \usepackage{amssymb}
 \usepackage{caption}
 
+\newcommand{\image}[1]{
+\begin{figure}[ht]
+	\centering
+	\fbox{\resizebox{1\columnwidth}{!}{\includegraphics{#1}}}
+\end{figure}
+}
+
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -139,4 +147,22 @@ When computing the imager, we treat the last position of a relation as its `outp
 \begin{equation}
 	R(a_1, \ldots, a_{n-1}) = \{a \in A : (a_1, \ldots, a_{n-1}, a) \in R \}
 \end{equation}
+
+\newpage
+\subsection*{Extras}
+
+\image{2017_1/2017a/uppg3.png}
+\image{2017_1/2017a/uppg5.png}
+\image{2017_1/2017a/uppg4-no-crop.png}
+\image{2017_1/2017a/4-help.png}
+\image{misc/2018-2-2-q.png}
+\image{misc/2018-2-2-s.png}
+\image{misc/vertecies-uppg.png}
+\image{misc/vertecies-sol.png}
+\image{misc/languages.png}
+\image{misc/5-1.png}
+\image{misc/5-2.png}
+
+
 \end{document}
+
