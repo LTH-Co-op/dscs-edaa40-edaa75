@@ -21,10 +21,10 @@
 \usepackage{amssymb}
 \usepackage{caption}
 
-\newcommand{\image}[1]{
+\newcommand{\image}[2][1.0]{
 \begin{figure}[ht]
 	\centering
-	\fbox{\resizebox{0.85\columnwidth}{!}{\includegraphics{#1}}}
+	\fbox{\resizebox{#1\columnwidth}{!}{\includegraphics{#2}}}
 \end{figure}
 }
 
@@ -47,7 +47,7 @@ See p.12 in Definitions for \emph{basic logic connectives}.
 \newpage
 \section*{Intervals}
 
-In this problem, functions are applied to intervals, with intervals as output. 
+In this problem, functions are applied to intervals, with intervals as output.
 
 \begin{figure}[ht]
 	\centering
@@ -111,7 +111,7 @@ The reason why it's antisymmetric is the same reason it is not reflexive.
 \newpage
 \section*{Other important definitions}
 \subsection*{Node height/depth}
-The \textbf{link-height} (\emph{alias:} level) in a tree is defined recursively: that of the root is 0, 
+The \textbf{link-height} (\emph{alias:} level) in a tree is defined recursively: that of the root is 0,
 and that of each of the children of a node is one greater than that of the node.
 
 The \textbf{node-height} (\emph{alias:} height) is defined by the same recursion,
@@ -156,39 +156,39 @@ When computing the image, we treat the last element of a tuple as the `output'.
 \begin{equation}
 	R(a_1, \ldots, a_{n-1}) = \{a \in A : (a_1, \ldots, a_{n-1}, a) \in R \}
 \end{equation}
+
 \newpage
 \subsection*{Order}
 \image{misc/order-piazza.png}
 
+\newpage
+\section*{Extras}
 
-
-\subsection*{Extras}
-
-\subsubsection*{Properties of composition of relations}
+\subsection*{Properties of composition of relations}
 \image{2017_1/2017a/uppg3.png}
 
 \newpage
-\subsubsection*{Recursive traversion of a tree}
-\image{2017_1/2017a/uppg5.png}
+\subsection*{Recursive traversion of a tree}
+\image[0.95]{2017_1/2017a/uppg5.png}
 
 \newpage
-\subsubsection*{Injective functions}
+\subsection*{Injective functions}
 \image{2017_1/2017a/uppg4.png}
 
 \newpage
-\subsubsection*{Injections, Bijections, Infinite sets and Recursion}
+\subsection*{Injections, Bijections, Infinite sets and Recursion}
 \image{misc/2018-2-2.png}
 
 \newpage
-\subsubsection*{Recursively computing all simple cycles}
+\subsection*{Recursively computing all simple cycles}
 \image{misc/vertecies-uppg.png}
 
 \newpage
-\subsubsection*{Recursively computing the cost of a path}
-\image{misc/5-1.png}
+\subsection*{Recursively computing the cost of a path}
+\image[0.95]{misc/5-1.png}
 
 \newpage
-\subsubsection*{Languages}
+\subsection*{Languages}
 \image{misc/languages.png}
 
 \end{document}
